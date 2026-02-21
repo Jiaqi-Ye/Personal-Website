@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_image from './user-image1.png';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -44,6 +44,8 @@ import right_arrow_black from './right-arrow-black.png';
 import github from './github.png';
 import email from './email.png';
 import kokomi from './kokomi.jpg';
+import oc from './oc.jpeg';
+import art_cs from './art_cs.jpeg';
 
 export const assets = {
     user_image,
@@ -92,6 +94,8 @@ export const assets = {
     github,
     email,
     kokomi,
+    oc,
+    art_cs,
 };
 
 export const workData = [
