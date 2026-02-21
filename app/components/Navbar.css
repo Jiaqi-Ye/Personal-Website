@@ -1,0 +1,29 @@
+.nav-link {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 1rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: -1.2em;
+  bottom: -8px;
+  width: calc(100% + 2.4em);
+  height: 2px;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+ul li:first-child .nav-link::after {
+  opacity: 1 !important;
+  transition: none;
+}
