@@ -1,3 +1,8 @@
+# Personal-Website
+You can visit the website with this link: (https://personal-website-five-taupe-57.vercel.app/)
+
+<img width="2510" height="1346" alt="image" src="https://github.com/user-attachments/assets/845dbe3d-c43b-425a-8f58-6b4e989833f9" />
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,9 +39,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-# Personal-Website
-You can visit the website with this link: (https://personal-website-five-taupe-57.vercel.app/)
-
-<img width="2510" height="1346" alt="image" src="https://github.com/user-attachments/assets/845dbe3d-c43b-425a-8f58-6b4e989833f9" />
 
