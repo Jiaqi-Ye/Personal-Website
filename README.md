@@ -37,3 +37,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # Personal-Website
 You can visit the website with this link: (https://personal-website-five-taupe-57.vercel.app/)
+
+<img width="2510" height="1346" alt="image" src="https://github.com/user-attachments/assets/845dbe3d-c43b-425a-8f58-6b4e989833f9" />
+
