@@ -594,7 +594,7 @@
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding: 26px 150px 44px 0;
+  padding: 26px 0 44px;
   box-sizing: border-box;
   border-top: 1px solid var(--line);
   color: #374151;
