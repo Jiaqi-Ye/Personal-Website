@@ -56,13 +56,6 @@
   object-fit: cover;
   object-position: 50% 22%;
   border: 1px solid #e5e5e5;
-  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 500ms ease;
-}
-
-.profilePhoto:hover {
-  transform: translateY(-4px) scale(1.015);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
 
 .profile h1 {
@@ -128,12 +121,10 @@
   height: 28px;
   color: #111111;
   text-decoration: none;
-  transition: opacity 220ms ease, transform 220ms ease;
 }
 
 .socialLinks a:hover {
   opacity: 0.62;
-  transform: translateY(-2px);
 }
 
 .socialLinks img,
@@ -250,11 +241,6 @@
   gap: 18px;
   padding: 20px 0 22px;
   border-bottom: 1px solid var(--line);
-  transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.entry:hover {
-  transform: translateX(4px);
 }
 
 .entryLogo {
@@ -273,15 +259,6 @@
 .entryLogo img {
   width: 100%;
   height: 100%;
-  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.entry:hover .entryLogo img:not(.logoZoom) {
-  transform: scale(1.045);
-}
-
-.entry:hover .entryLogo .logoZoom {
-  transform: scale(1.24);
 }
 
 .entryLogoWide {
@@ -396,11 +373,6 @@
   align-items: start;
   padding: 22px 0;
   border-bottom: 1px solid var(--line);
-  transition: transform 350ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.publication:hover {
-  transform: translateY(-3px);
 }
 
 .publicationImage {
@@ -418,11 +390,6 @@
 .publicationImage img {
   object-fit: cover;
   object-position: left center;
-  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.publication:hover .publicationImage img {
-  transform: scale(1.018);
 }
 
 .publicationBody h3 {
@@ -503,12 +470,10 @@
   gap: 11px;
   color: #555555;
   text-decoration: none;
-  transition: color 220ms ease, transform 220ms ease;
 }
 
 .contactChannels a:hover {
   color: #000000;
-  transform: translateY(-2px);
 }
 
 .contactChannels img {
@@ -765,13 +730,6 @@
   }
 
   .motionReady [data-reveal],
-  .entry,
-  .entryLogo img,
-  .publication,
-  .publicationImage img,
-  .profilePhoto,
-  .socialLinks a,
-  .contactChannels a,
   .introActions a,
   .contactForm button {
     opacity: 1 !important;
