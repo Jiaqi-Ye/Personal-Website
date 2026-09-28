@@ -26,6 +26,10 @@
   transform: translateX(-34px);
 }
 
+.motionReady [data-reveal="right"] {
+  transform: translateX(34px);
+}
+
 .motionReady [data-reveal].revealVisible {
   opacity: 1;
   transform: none;

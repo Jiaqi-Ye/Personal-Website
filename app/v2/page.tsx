@@ -151,11 +151,10 @@ export default function V2Page() {
           </nav>
         </aside>
 
-        <div className={styles.content}>
+        <div className={styles.content} data-reveal="right">
           <section
             className={styles.section}
             aria-labelledby="about-heading"
-            data-reveal="up"
           >
             <h2 id="about-heading">About Me</h2>
             <p>
