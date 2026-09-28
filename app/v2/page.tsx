@@ -514,23 +514,22 @@ export default function V2Page() {
 
           <ContactForm />
 
+          <footer className={styles.footer}>
+            <a
+              className={styles.copyright}
+              href="https://github.com/Jiaqi-Ye"
+              target="_blank"
+              rel="noreferrer"
+            >
+              © 2025 Jiaqi Ye. All rights reserved.
+            </a>
+            <div className={styles.footerLinks}>
+              <span>Terms of Services</span>
+              <span>Privacy Policy</span>
+            </div>
+          </footer>
         </div>
       </div>
-
-      <footer className={styles.footer}>
-        <a
-          className={styles.copyright}
-          href="https://github.com/Jiaqi-Ye"
-          target="_blank"
-          rel="noreferrer"
-        >
-          © 2025 Jiaqi Ye. All rights reserved.
-        </a>
-        <div className={styles.footerLinks}>
-          <span>Terms of Services</span>
-          <span>Privacy Policy</span>
-        </div>
-      </footer>
     </main>
   );
 }
