@@ -518,14 +518,15 @@ export default function V2Page() {
       </div>
 
       <footer className={styles.footer}>
-        <div className={styles.footerMeta}>
-          <a
-            href="https://github.com/Jiaqi-Ye"
-            target="_blank"
-            rel="noreferrer"
-          >
-            © 2025 Jiaqi Ye. All rights reserved.
-          </a>
+        <a
+          className={styles.copyright}
+          href="https://github.com/Jiaqi-Ye"
+          target="_blank"
+          rel="noreferrer"
+        >
+          © 2025 Jiaqi Ye. All rights reserved.
+        </a>
+        <div className={styles.footerLinks}>
           <span>Terms of Services</span>
           <span>Privacy Policy</span>
         </div>
