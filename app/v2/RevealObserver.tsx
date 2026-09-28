@@ -23,17 +23,11 @@ export default function RevealObserver() {
     }
 
     root.classList.add(styles.motionReady);
-    let secondFrame = 0;
-    const firstFrame = window.requestAnimationFrame(() => {
-      secondFrame = window.requestAnimationFrame(() => {
-        targets.forEach((target) => target.classList.add(styles.revealVisible));
-      });
-    });
+    const entranceTimer = window.setTimeout(() => {
+      targets.forEach((target) => target.classList.add(styles.revealVisible));
+    }, 110);
 
-    return () => {
-      window.cancelAnimationFrame(firstFrame);
-      window.cancelAnimationFrame(secondFrame);
-    };
+    return () => window.clearTimeout(entranceTimer);
   }, []);
 
   return null;
