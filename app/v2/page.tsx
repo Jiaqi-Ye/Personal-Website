@@ -99,6 +99,7 @@ function Entry({
 export default function V2Page() {
   return (
     <main className={styles.page}>
+      <BackToTop />
       <div className={styles.layout}>
         <aside
           className={styles.profile}
@@ -517,7 +518,7 @@ export default function V2Page() {
       </div>
 
       <footer className={styles.footer}>
-        <p>
+        <div className={styles.footerMeta}>
           <a
             href="https://github.com/Jiaqi-Ye"
             target="_blank"
@@ -525,11 +526,8 @@ export default function V2Page() {
           >
             © 2025 Jiaqi Ye. All rights reserved.
           </a>
-        </p>
-        <div className={styles.footerLinks}>
           <span>Terms of Services</span>
           <span>Privacy Policy</span>
-          <BackToTop />
         </div>
       </footer>
     </main>
