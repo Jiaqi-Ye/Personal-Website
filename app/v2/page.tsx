@@ -176,7 +176,7 @@ export default function V2Page() {
                 target="_blank"
                 rel="noreferrer"
               >
-                My CV
+                My Resume
                 <Image src={downloadIcon} alt="" width={16} height={16} />
               </a>
             </div>
