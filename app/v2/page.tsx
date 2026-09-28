@@ -99,7 +99,6 @@ function Entry({
 export default function V2Page() {
   return (
     <main className={styles.page}>
-      <BackToTop />
       <div className={styles.layout}>
         <aside
           className={styles.profile}
@@ -514,18 +513,25 @@ export default function V2Page() {
 
           <ContactForm />
 
-          <footer className={styles.footer}>
-            <p>© 2026 Jiaqi Ye</p>
-            <a
-              href="https://www.linkedin.com/in/jiaqi-ye-40a8b635a"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
-            </a>
-          </footer>
         </div>
       </div>
+
+      <footer className={styles.footer}>
+        <p>
+          <a
+            href="https://github.com/Jiaqi-Ye"
+            target="_blank"
+            rel="noreferrer"
+          >
+            © 2025 Jiaqi Ye. All rights reserved.
+          </a>
+        </p>
+        <div className={styles.footerLinks}>
+          <span>Terms of Services</span>
+          <span>Privacy Policy</span>
+          <BackToTop />
+        </div>
+      </footer>
     </main>
   );
 }
