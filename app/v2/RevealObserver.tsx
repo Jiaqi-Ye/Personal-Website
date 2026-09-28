@@ -23,21 +23,17 @@ export default function RevealObserver() {
     }
 
     root.classList.add(styles.motionReady);
+    let secondFrame = 0;
+    const firstFrame = window.requestAnimationFrame(() => {
+      secondFrame = window.requestAnimationFrame(() => {
+        targets.forEach((target) => target.classList.add(styles.revealVisible));
+      });
+    });
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add(styles.revealVisible);
-          observer.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -8%", threshold: 0.08 },
-    );
-
-    targets.forEach((target) => observer.observe(target));
-
-    return () => observer.disconnect();
+    return () => {
+      window.cancelAnimationFrame(firstFrame);
+      window.cancelAnimationFrame(secondFrame);
+    };
   }, []);
 
   return null;

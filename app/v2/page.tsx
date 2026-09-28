@@ -187,7 +187,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="interests-heading"
-            data-reveal="up"
           >
             <h2 id="interests-heading">Engineering Focus</h2>
             <p>
@@ -217,7 +216,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="experience-heading"
-            data-reveal="up"
           >
             <h2 id="experience-heading">Experience</h2>
             <div className={styles.entries}>
@@ -278,7 +276,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="research-heading"
-            data-reveal="up"
           >
             <h2 id="research-heading">Selected Research</h2>
             <div className={styles.entries}>
@@ -341,7 +338,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="projects-heading"
-            data-reveal="up"
           >
             <h2 id="projects-heading">Selected Projects</h2>
             <div className={styles.entries}>
@@ -415,7 +411,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="publications-heading"
-            data-reveal="up"
           >
             <h2 id="publications-heading">Publications</h2>
             <div className={styles.publications}>
@@ -470,7 +465,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="news-heading"
-            data-reveal="up"
           >
             <h2 id="news-heading">News</h2>
             <ul className={styles.news}>
@@ -492,7 +486,6 @@ export default function V2Page() {
           <section
             className={styles.section}
             aria-labelledby="education-heading"
-            data-reveal="up"
           >
             <h2 id="education-heading">Education</h2>
             <div className={styles.entries}>
@@ -523,7 +516,7 @@ export default function V2Page() {
 
           <ContactForm />
 
-          <footer className={styles.footer} data-reveal="up">
+          <footer className={styles.footer}>
             <p>© 2026 Jiaqi Ye</p>
             <a
               href="https://www.linkedin.com/in/jiaqi-ye-40a8b635a"

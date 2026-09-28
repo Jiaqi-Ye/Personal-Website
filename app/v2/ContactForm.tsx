@@ -51,7 +51,6 @@ export default function ContactForm() {
       id="contact"
       className={`${styles.section} ${styles.contactSection}`}
       aria-labelledby="contact-heading"
-      data-reveal="up"
     >
       <h2 id="contact-heading">Get in Touch</h2>
       <p className={styles.contactIntro}>
