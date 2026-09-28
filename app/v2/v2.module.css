@@ -138,16 +138,16 @@
   padding: 11px 20px;
   border: 2px solid #111111;
   border-radius: 999px;
-  background: #ffffff;
-  color: #111111;
+  background: #111111;
+  color: #ffffff;
   font: inherit;
   cursor: pointer;
   transition: background 300ms ease, color 300ms ease;
 }
 
 .backToTop:hover {
-  background: #111111;
-  color: #ffffff;
+  background: #ffffff;
+  color: #111111;
 }
 
 .section {
