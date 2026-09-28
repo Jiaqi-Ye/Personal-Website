@@ -18,7 +18,7 @@ import uwMadisonLogo from "@/assets/university_of_wisconsin_madison_logo.jpg";
 import uwSurgeryLogo from "@/assets/wiscsurgery_logo.jpg";
 
 import ContactForm from "./ContactForm";
-import RevealObserver from "./RevealObserver";
+import BackToTop from "./BackToTop";
 import styles from "./v2.module.css";
 
 export const metadata: Metadata = {
@@ -98,13 +98,12 @@ function Entry({
 
 export default function V2Page() {
   return (
-    <main className={styles.page} data-reveal-root>
-      <RevealObserver />
+    <main className={styles.page}>
+      <BackToTop />
       <div className={styles.layout}>
         <aside
           className={styles.profile}
           aria-label="Jiaqi Ye profile"
-          data-reveal="left"
         >
           <Image
             src={profilePhoto}
@@ -151,7 +150,7 @@ export default function V2Page() {
           </nav>
         </aside>
 
-        <div className={styles.content} data-reveal="right">
+        <div className={styles.content}>
           <section
             className={styles.section}
             aria-labelledby="about-heading"

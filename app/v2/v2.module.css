@@ -11,31 +11,6 @@
   line-height: 1.68;
 }
 
-.motionReady [data-reveal] {
-  opacity: 0;
-  will-change: opacity, transform;
-  transition: opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-.motionReady [data-reveal="up"] {
-  transform: translateY(26px);
-}
-
-.motionReady [data-reveal="left"] {
-  transform: translateX(-64px);
-}
-
-.motionReady [data-reveal="right"] {
-  transform: translateX(64px);
-  transition-delay: 55ms;
-}
-
-.motionReady [data-reveal].revealVisible {
-  opacity: 1;
-  transform: none;
-}
-
 .layout {
   display: grid;
   grid-template-columns: minmax(220px, 260px) minmax(0, 1fr);
@@ -153,6 +128,27 @@
 .content {
   min-width: 0;
   max-width: 760px;
+}
+
+.backToTop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 20;
+  padding: 9px 14px;
+  border: 1px solid #111111;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #111111;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.86rem;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.backToTop:hover {
+  background: #111111;
+  color: #ffffff;
 }
 
 .section {
@@ -727,6 +723,11 @@
   .contactFields {
     grid-template-columns: 1fr;
   }
+
+  .backToTop {
+    right: 16px;
+    bottom: 16px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -734,7 +735,6 @@
     scroll-behavior: auto;
   }
 
-  .motionReady [data-reveal],
   .introActions a,
   .contactForm button {
     opacity: 1 !important;
