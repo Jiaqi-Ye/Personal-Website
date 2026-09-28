@@ -25,7 +25,7 @@ export default function RevealObserver() {
     root.classList.add(styles.motionReady);
     const entranceTimer = window.setTimeout(() => {
       targets.forEach((target) => target.classList.add(styles.revealVisible));
-    }, 110);
+    }, 70);
 
     return () => window.clearTimeout(entranceTimer);
   }, []);
