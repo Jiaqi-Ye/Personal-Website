@@ -7,11 +7,13 @@ import bfuLogo from "@/assets/bfu.png";
 import chi27Image from "@/assets/CHI27.jpg";
 import downloadIcon from "@/assets/download-icon.png";
 import flowEditImage from "@/assets/Flowedit.png";
+import forestImage from "@/assets/forest_index.png";
 import gitIcon from "@/assets/git.png";
 import githubIcon from "@/assets/github.png";
 import labAnimalLogo from "@/assets/lab animal logo.png";
 import mitCsailLogo from "@/assets/mit_csail_logo.jpg";
 import nejmAiImage from "@/assets/NEJM AI.jpg";
+import quackgradLogo from "@/assets/app_logo.png";
 import t2vImage from "@/assets/T2V.png";
 import donovansLogo from "@/assets/the_donovans_venom_501c3_logo.jpg";
 import uwMadisonLogo from "@/assets/university_of_wisconsin_madison_logo.jpg";
@@ -401,6 +403,64 @@ export default function V2Page() {
                 </p>
                 <p className={styles.stack}>
                   RAG · FAISS · FastAPI · Docker Compose · automated testing
+                </p>
+              </Entry>
+              <Entry
+                title="FORESTS — Responsive Conservation Platform"
+                meta="Responsive Web Design · UI/UX"
+                logo={forestImage}
+                logoFit="cover"
+                logoWide
+                links={[
+                  {
+                    label: "Live Site",
+                    href: "https://jiaqi-ye.github.io/FORESTS-Responsive-Web-Development/",
+                  },
+                  {
+                    label: "Code",
+                    href: "https://github.com/Jiaqi-Ye/FORESTS-Responsive-Web-Development",
+                  },
+                ]}
+              >
+                <p>
+                  Designed and built a responsive conservation website that
+                  brings educational content, an eco-friendly marketplace, and
+                  recycling-location discovery into a clear, approachable user
+                  journey across desktop and mobile.
+                </p>
+                <p className={styles.stack}>
+                  UI/UX design · responsive design · HTML · CSS · JavaScript
+                </p>
+              </Entry>
+              <Entry
+                title="Quackgrad — Graduate Application Companion"
+                meta="Mobile App UI/UX · Dec. 2022"
+                logo={quackgradLogo}
+                logoFit="contain"
+                logoWide
+                links={[
+                  {
+                    label: "Case Study",
+                    href: "https://github.com/Jiaqi-Ye/Quackgrad-Mobile-app/blob/main/App%20Design%20Concept%20Document.pdf",
+                  },
+                  {
+                    label: "Demo",
+                    href: "https://www.youtube.com/watch?v=4X4dRxKswAc",
+                  },
+                  {
+                    label: "Code",
+                    href: "https://github.com/Jiaqi-Ye/Quackgrad-Mobile-app",
+                  },
+                ]}
+              >
+                <p>
+                  Designed a one-stop mobile experience for art graduate-school
+                  applicants, combining GRE preparation, university updates,
+                  peer Q&amp;A, portfolio inspiration, and goal tracking around
+                  research-backed personas and an original mascot system.
+                </p>
+                <p className={styles.stack}>
+                  User research · personas · information architecture · UI design
                 </p>
               </Entry>
             </div>
