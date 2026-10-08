@@ -52,7 +52,7 @@ export default function ContactForm() {
       className={`${styles.section} ${styles.contactSection}`}
       aria-labelledby="contact-heading"
     >
-      <h2 id="contact-heading">Get in Touch</h2>
+      <h2 id="contact-heading">Contact</h2>
       <p className={styles.contactIntro}>
         I&apos;d love to hear from you. Reach out about AI engineering, software
         opportunities, research collaborations, or a project you&apos;re building.

@@ -158,7 +158,7 @@ export default function V2Page() {
             className={styles.section}
             aria-labelledby="about-heading"
           >
-            <h2 id="about-heading">About Me</h2>
+            <h2 id="about-heading">About</h2>
             <p>
               I am a Computer Science undergraduate at UW–Madison and an AI and
               software engineer focused on turning LLM capabilities into
@@ -189,7 +189,7 @@ export default function V2Page() {
             className={styles.section}
             aria-labelledby="interests-heading"
           >
-            <h2 id="interests-heading">Engineering Focus</h2>
+            <h2 id="interests-heading">Skills</h2>
             <p>
               I focus on shipping AI systems that remain useful beyond a demo:
               grounded in real data, measurable, secure, and designed for human
@@ -276,71 +276,9 @@ export default function V2Page() {
 
           <section
             className={styles.section}
-            aria-labelledby="research-heading"
-          >
-            <h2 id="research-heading">Selected Research</h2>
-            <div className={styles.entries}>
-              <Entry
-                title="Would You Let Your Proxy Say That?"
-                meta="Northeastern Human-Centered AI Lab · Jul. 2026 – Sep. 2026"
-                logo={chi27Image}
-                logoFit="cover"
-                logoUnoptimized
-              >
-                <p>
-                  Translated findings from 12 storyboard-based interviews into
-                  design requirements for controllable meeting agents, including
-                  when systems should relay, escalate, or return control to a
-                  user.
-                </p>
-              </Entry>
-              <Entry
-                title="Data-Synth AutoResearch"
-                meta="Sprocket Lab, UW–Madison · Apr. 2026 – Aug. 2026"
-                logo={autoDataImage}
-                logoFit="cover"
-                logoUnoptimized
-              >
-                <p>
-                  Automated an end-to-end synthetic-data pipeline for MedMCQA,
-                  covering generation, verification, fine-tuning, and held-out
-                  evaluation. Filtering and repair improved model performance by
-                  up to 2.2 percentage points.
-                </p>
-              </Entry>
-              <Entry
-                title="FlowEdit Bridge — Controllable Image Editing"
-                meta="UW–Madison · Jan. 2026 – Aug. 2026"
-                logo={flowEditImage}
-                logoFit="cover"
-              >
-                <p>
-                  Implemented bridge-based editing trajectories, directional
-                  correction, and heatmap-guided refinement. A 250-pair evaluation
-                  improved source preservation by 7.1% and CLIP alignment by
-                  1.51% over the FlowEdit baseline.
-                </p>
-              </Entry>
-              <Entry
-                title="Controllable T2V Vector Animation"
-                meta="UW–Madison · Jun. 2025 – Dec. 2025"
-                logo={t2vImage}
-                logoFit="cover"
-              >
-                <p>
-                  Built a controllable video-generation workflow by fine-tuning
-                  Wan 2.1 with DiffSynth-Studio, adding layer-wise control over
-                  motion, visual style, and structural consistency.
-                </p>
-              </Entry>
-            </div>
-          </section>
-
-          <section
-            className={styles.section}
             aria-labelledby="projects-heading"
           >
-            <h2 id="projects-heading">Selected Projects</h2>
+            <h2 id="projects-heading">Projects</h2>
             <div className={styles.entries}>
               <Entry
                 title="Labfy"
@@ -411,9 +349,125 @@ export default function V2Page() {
 
           <section
             className={styles.section}
+            aria-labelledby="research-heading"
+          >
+            <h2 id="research-heading">Research</h2>
+            <div className={styles.entries}>
+              <Entry
+                title="Would You Let Your Proxy Say That?"
+                meta="Northeastern Human-Centered AI Lab · Jul. 2026 – Sep. 2026"
+                logo={chi27Image}
+                logoFit="cover"
+                logoUnoptimized
+              >
+                <p>
+                  Translated findings from 12 storyboard-based interviews into
+                  design requirements for controllable meeting agents, including
+                  when systems should relay, escalate, or return control to a
+                  user.
+                </p>
+              </Entry>
+              <Entry
+                title="Data-Synth AutoResearch"
+                meta="Sprocket Lab, UW–Madison · Apr. 2026 – Aug. 2026"
+                logo={autoDataImage}
+                logoFit="cover"
+                logoUnoptimized
+              >
+                <p>
+                  Automated an end-to-end synthetic-data pipeline for MedMCQA,
+                  covering generation, verification, fine-tuning, and held-out
+                  evaluation. Filtering and repair improved model performance by
+                  up to 2.2 percentage points.
+                </p>
+              </Entry>
+              <Entry
+                title="FlowEdit Bridge — Controllable Image Editing"
+                meta="UW–Madison · Jan. 2026 – Aug. 2026"
+                logo={flowEditImage}
+                logoFit="cover"
+              >
+                <p>
+                  Implemented bridge-based editing trajectories, directional
+                  correction, and heatmap-guided refinement. A 250-pair evaluation
+                  improved source preservation by 7.1% and CLIP alignment by
+                  1.51% over the FlowEdit baseline.
+                </p>
+              </Entry>
+              <Entry
+                title="Controllable T2V Vector Animation"
+                meta="UW–Madison · Jun. 2025 – Dec. 2025"
+                logo={t2vImage}
+                logoFit="cover"
+              >
+                <p>
+                  Built a controllable video-generation workflow by fine-tuning
+                  Wan 2.1 with DiffSynth-Studio, adding layer-wise control over
+                  motion, visual style, and structural consistency.
+                </p>
+              </Entry>
+            </div>
+          </section>
+
+          <section
+            className={styles.section}
+            aria-labelledby="publications-heading"
+          >
+            <h2 id="publications-heading">Publications</h2>
+            <div className={styles.publications}>
+              <article className={styles.publication}>
+                <div className={styles.publicationImage}>
+                  <Image
+                    src={chi27Image}
+                    alt="Visual summary of the AI meeting proxy delegation study"
+                    fill
+                    unoptimized
+                    sizes="(max-width: 560px) calc(100vw - 32px), 210px"
+                  />
+                </div>
+                <div className={styles.publicationBody}>
+                  <h3>
+                    Would You Let Your Proxy Say That? Act Type, Context, and
+                    the Boundary of AI Delegation in Team Meetings
+                  </h3>
+                  <p>
+                    Jingfei Huang, Yaning Li, Yutong Chen, <b>Jiaqi Ye</b>, Rui
+                    Sheng, Xuhai “Orson” Xu, Dakuo Wang, and Bingsheng Yao.
+                  </p>
+                  <em>Manuscript submitted to CHI 2027, under review.</em>
+                </div>
+              </article>
+              <article className={styles.publication}>
+                <div className={styles.publicationImage}>
+                  <Image
+                    src={nejmAiImage}
+                    alt="Architecture of the adrenal nodule educational RAG chatbot"
+                    fill
+                    unoptimized
+                    sizes="(max-width: 560px) calc(100vw - 32px), 210px"
+                  />
+                </div>
+                <div className={styles.publicationBody}>
+                  <h3>
+                    Development and Preliminary Evaluation of a
+                    Retrieval-Augmented Educational Chatbot for Adrenal Nodule
+                    Clinic Navigation
+                  </h3>
+                  <p>
+                    <b>Jiaqi Ye</b>, Alberto García Chávez, Mason Maeder,
+                    Alexandra Helbing, and Alexander Chiu.
+                  </p>
+                  <em>Manuscript in preparation for NEJM AI, 2026.</em>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section
+            className={styles.section}
             aria-labelledby="design-projects-heading"
           >
-            <h2 id="design-projects-heading">UI/UX &amp; Product Design</h2>
+            <h2 id="design-projects-heading">Design</h2>
             <div className={styles.entries}>
               <Entry
                 title="The Donovan’s Piano Room"
@@ -492,81 +546,6 @@ export default function V2Page() {
 
           <section
             className={styles.section}
-            aria-labelledby="publications-heading"
-          >
-            <h2 id="publications-heading">Publications</h2>
-            <div className={styles.publications}>
-              <article className={styles.publication}>
-                <div className={styles.publicationImage}>
-                  <Image
-                    src={chi27Image}
-                    alt="Visual summary of the AI meeting proxy delegation study"
-                    fill
-                    unoptimized
-                    sizes="(max-width: 560px) calc(100vw - 32px), 210px"
-                  />
-                </div>
-                <div className={styles.publicationBody}>
-                  <h3>
-                    Would You Let Your Proxy Say That? Act Type, Context, and
-                    the Boundary of AI Delegation in Team Meetings
-                  </h3>
-                  <p>
-                    Jingfei Huang, Yaning Li, Yutong Chen, <b>Jiaqi Ye</b>, Rui
-                    Sheng, Xuhai “Orson” Xu, Dakuo Wang, and Bingsheng Yao.
-                  </p>
-                  <em>Manuscript submitted to CHI 2027, under review.</em>
-                </div>
-              </article>
-              <article className={styles.publication}>
-                <div className={styles.publicationImage}>
-                  <Image
-                    src={nejmAiImage}
-                    alt="Architecture of the adrenal nodule educational RAG chatbot"
-                    fill
-                    unoptimized
-                    sizes="(max-width: 560px) calc(100vw - 32px), 210px"
-                  />
-                </div>
-                <div className={styles.publicationBody}>
-                  <h3>
-                    Development and Preliminary Evaluation of a
-                    Retrieval-Augmented Educational Chatbot for Adrenal Nodule
-                    Clinic Navigation
-                  </h3>
-                  <p>
-                    <b>Jiaqi Ye</b>, Alberto García Chávez, Mason Maeder,
-                    Alexandra Helbing, and Alexander Chiu.
-                  </p>
-                  <em>Manuscript in preparation for NEJM AI, 2026.</em>
-                </div>
-              </article>
-            </div>
-          </section>
-
-          <section
-            className={styles.section}
-            aria-labelledby="news-heading"
-          >
-            <h2 id="news-heading">News</h2>
-            <ul className={styles.news}>
-              <li>
-                <strong>[Sep. 2026]</strong> Submitted our work on AI
-                communication proxies to CHI 2027.
-              </li>
-              <li>
-                <strong>[Apr. 2026]</strong> Won First Prize at the MIT CSAIL
-                Agentic AI Hackathon with Labfy 🎉.
-              </li>
-              <li>
-                <strong>[Jan. 2026]</strong> Joined UW Surgery as an AI Engineer
-                Intern.
-              </li>
-            </ul>
-          </section>
-
-          <section
-            className={styles.section}
             aria-labelledby="education-heading"
           >
             <h2 id="education-heading">Education</h2>
@@ -594,6 +573,27 @@ export default function V2Page() {
                 </p>
               </Entry>
             </div>
+          </section>
+
+          <section
+            className={styles.section}
+            aria-labelledby="news-heading"
+          >
+            <h2 id="news-heading">News</h2>
+            <ul className={styles.news}>
+              <li>
+                <strong>[Sep. 2026]</strong> Submitted our work on AI
+                communication proxies to CHI 2027.
+              </li>
+              <li>
+                <strong>[Apr. 2026]</strong> Won First Prize at the MIT CSAIL
+                Agentic AI Hackathon with Labfy 🎉.
+              </li>
+              <li>
+                <strong>[Jan. 2026]</strong> Joined UW Surgery as an AI Engineer
+                Intern.
+              </li>
+            </ul>
           </section>
 
           <ContactForm />
