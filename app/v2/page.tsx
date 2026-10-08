@@ -13,6 +13,7 @@ import githubIcon from "@/assets/github.png";
 import labAnimalLogo from "@/assets/lab animal logo.png";
 import mitCsailLogo from "@/assets/mit_csail_logo.jpg";
 import nejmAiImage from "@/assets/NEJM AI.jpg";
+import pianoRoomImage from "@/assets/piano_room.png";
 import quackgradLogo from "@/assets/app_logo.png";
 import t2vImage from "@/assets/T2V.png";
 import donovansLogo from "@/assets/the_donovans_venom_501c3_logo.jpg";
@@ -405,6 +406,37 @@ export default function V2Page() {
                   RAG · FAISS · FastAPI · Docker Compose · automated testing
                 </p>
               </Entry>
+            </div>
+          </section>
+
+          <section
+            className={styles.section}
+            aria-labelledby="design-projects-heading"
+          >
+            <h2 id="design-projects-heading">UI/UX &amp; Product Design</h2>
+            <div className={styles.entries}>
+              <Entry
+                title="The Donovan’s Piano Room"
+                meta="Responsive Product Experience"
+                logo={pianoRoomImage}
+                logoFit="cover"
+                logoWide
+                links={[
+                  {
+                    label: "Demo",
+                    href: "https://the-donovans-piano-room-hazel.vercel.app/",
+                  },
+                ]}
+              >
+                <p>
+                  Designed and developed a responsive piano-room shopping
+                  experience with clear product discovery, account, cart, and
+                  checkout flows across desktop and mobile.
+                </p>
+                <p className={styles.stack}>
+                  Product design · responsive UI · interaction design · checkout UX
+                </p>
+              </Entry>
               <Entry
                 title="FORESTS — Responsive Conservation Platform"
                 meta="Responsive Web Design · UI/UX"
@@ -413,12 +445,8 @@ export default function V2Page() {
                 logoWide
                 links={[
                   {
-                    label: "Live Site",
+                    label: "Demo",
                     href: "https://jiaqi-ye.github.io/FORESTS-Responsive-Web-Development/",
-                  },
-                  {
-                    label: "Code",
-                    href: "https://github.com/Jiaqi-Ye/FORESTS-Responsive-Web-Development",
                   },
                 ]}
               >
@@ -440,16 +468,12 @@ export default function V2Page() {
                 logoWide
                 links={[
                   {
-                    label: "Case Study",
-                    href: "https://github.com/Jiaqi-Ye/Quackgrad-Mobile-app/blob/main/App%20Design%20Concept%20Document.pdf",
-                  },
-                  {
                     label: "Demo",
                     href: "https://www.youtube.com/watch?v=4X4dRxKswAc",
                   },
                   {
-                    label: "Code",
-                    href: "https://github.com/Jiaqi-Ye/Quackgrad-Mobile-app",
+                    label: "Design Document",
+                    href: "/quackgrad-design-document.pdf",
                   },
                 ]}
               >
