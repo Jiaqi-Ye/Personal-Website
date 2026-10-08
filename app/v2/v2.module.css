@@ -240,7 +240,6 @@
   display: flex;
   gap: 18px;
   padding: 20px 0 22px;
-  border-bottom: 1px solid var(--line);
 }
 
 .entryLogo {
@@ -372,7 +371,6 @@
   gap: 22px;
   align-items: start;
   padding: 22px 0;
-  border-bottom: 1px solid var(--line);
 }
 
 .publicationImage {
