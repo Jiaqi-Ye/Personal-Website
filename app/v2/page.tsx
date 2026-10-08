@@ -161,16 +161,17 @@ export default function V2Page() {
             <h2 id="about-heading">About</h2>
             <p>
               I am a Computer Science undergraduate at UW–Madison and an AI and
-              software engineer focused on turning LLM capabilities into
-              reliable products. I build agentic systems, RAG pipelines,
-              multimodal workflows, and full-stack applications—from retrieval
-              and evaluation to APIs, interfaces, and deployment.
+              software engineer who builds dependable, human-centered products
+              from research prototype to deployed application. My work spans
+              clinical RAG systems, tool-using agents, engineering analytics,
+              multimodal generation, and full-stack web products.
             </p>
             <p>
-              Recent work includes a clinical education assistant for UW
-              Surgery, an award-winning lab copilot, and engineering analytics
-              tooling. My earlier background in Digital Media Art informs how I
-              design clear, human-centered interfaces for complex AI systems.
+              I have built a safety-focused education assistant for UW Surgery,
+              an award-winning multimodal lab copilot, data and security
+              platforms, and responsive web and mobile experiences. My
+              background in Digital Media Art helps me translate complex systems
+              into interfaces that are clear, useful, and engaging.
             </p>
             <div className={styles.introActions}>
               <a
@@ -191,25 +192,29 @@ export default function V2Page() {
           >
             <h2 id="interests-heading">Skills</h2>
             <p>
-              I focus on shipping AI systems that remain useful beyond a demo:
-              grounded in real data, measurable, secure, and designed for human
-              review.
+              I work across the AI product stack, connecting model behavior,
+              reliable backend systems, data, and thoughtful user experience.
             </p>
             <ul className={styles.themes}>
               <li>
-                <strong>Applied AI and Agents.</strong> Tool-using agents, RAG,
-                multimodal inputs, and workflow automation for real operational
-                tasks.
+                <strong>AI and Agents.</strong> RAG, tool calling, multimodal
+                workflows, prompt-injection defense, evaluation, guardrails,
+                citation grounding, and human-in-the-loop systems.
               </li>
               <li>
-                <strong>AI Reliability.</strong> Evaluation pipelines,
-                citation grounding, guardrails, structured outputs, and
-                human-in-the-loop controls.
+                <strong>Full-Stack Engineering.</strong> Python, FastAPI,
+                TypeScript, React, Next.js, SQL, APIs, authentication, testing,
+                Docker, and cloud deployment.
               </li>
               <li>
-                <strong>Full-Stack Product Engineering.</strong> APIs, data
-                systems, responsive interfaces, testing, and deployment around
-                AI-powered features.
+                <strong>Generative AI and Research.</strong> Synthetic-data
+                pipelines, model fine-tuning, controllable image and video
+                generation, experiment design, and quantitative evaluation.
+              </li>
+              <li>
+                <strong>Product and UX.</strong> User research, information
+                architecture, responsive web and mobile design, interaction
+                design, prototyping, and accessible interfaces.
               </li>
             </ul>
           </section>
